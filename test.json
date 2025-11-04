@@ -1,0 +1,42 @@
+{
+  "query_type": "full_state",
+  "timestamp": "2025-11-03T16:48:36.775239",
+  "icu_beds_free": [],
+  "icu_beds_occupied": ["ICU-1", "ICU-2", "ICU-3", "ICU-4"],
+  "trauma_bays_free": [],
+  "ed_treatment_rooms_available": 5,
+  "available_physicians": [
+    {
+      "name": "Dr. Smith",
+      "specialty": "Emergency Medicine",
+      "current_load": 6
+    },
+    {
+      "current_load": 5,
+      "specialty": "Emergency Medicine",
+      "name": "Dr. Jones"
+    }
+  ],
+  "available_nurses": [
+    { "current_patients": 5, "name": "RN Johnson" },
+    { "name": "RN Williams", "current_patients": 5 },
+    { "name": "RN Davis", "current_patients": 5 }
+  ],
+  "available_specialists": [
+    { "specialty": "Cardiologist", "available": false, "name": "Dr. Patel" },
+    {
+      "name": "Dr. Martinez",
+      "specialty": "Trauma Surgeon",
+      "available": false
+    }
+  ],
+  "overloaded_staff": null,
+  "equipment_status": {
+    "cardiac_monitors": { "available": 6, "total": 15 },
+    "defibrillators": { "total": 8, "available": 6 },
+    "ventilators": { "available": 0, "total": 7 }
+  },
+  "critical_shortages": ["ventilators", "ICU Beds", "Trauma Bays"],
+  "overall_capacity": "Critical",
+  "summary": "HOSPITAL STATE SNAPSHOT - 2025-11-03T16:48:36.775239\n\nBEDS:\n- ICU: 0 available ([]) (100% occupancy)\n- Trauma Bays: 0 available ([])\n- ED Treatment: 5 rooms available\n\nSTAFF:\n- Physicians: Dr. Jones (Emergency Medicine, load 5), Dr. Smith (Emergency Medicine, load 6)\n- Nurses: RN Davis (5 patients), RN Johnson (5 patients), RN Williams (5 patients)\n- Specialists: Dr. Patel (Cardiologist) unavailable, Dr. Martinez (Trauma Surgeon) unavailable.\n\nEQUIPMENT:\n- Ventilators: 0/7 available\n- Cardiac Monitors: 6/15 available\n- Defibrillators: 6/8 available\n\nALERTS: Ventilators critically low (NONE AVAILABLE). All ICU beds occupied. All Trauma Bays occupied.\n\nOVERALL CAPACITY: Critical"
+}
